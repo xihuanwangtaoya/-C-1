@@ -1,0 +1,28 @@
+#include"stdio.h"
+int main()
+{
+  int row=3,col=3;
+  int i,j;
+  int a[row][col];
+  int sum;
+  for(i=0;i<row;i++)
+  {
+    for(j=0;j<col;j++)
+    {
+      printf("第%d行第%d列\n",i+1,j+1)
+      scanf("%d",a[i][j]);
+    }
+  }
+  for(i=0;i<row;i++)
+  {
+    for(j=0;j<col;j++)
+    {
+      if(i==j||i+j==2)
+      {
+        sum+=a[i][j];
+      }
+    }
+  }
+  printf("sum:%d",sum)
+  return 0;
+}
